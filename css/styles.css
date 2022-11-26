@@ -1,16 +1,15 @@
 :root {
+    --color-logo:#000000;
     --color-background:#FFFFFF;
     --color-textbase:#757575;
     --color-title:#212121;
     --color-hoover:#2196F3;
     --color-section:#2F303A;
+    --color-button-background:#F5F4FA;
 
 }
 body {
-    width: 1600px;
-    height: 2346px;
     background-color: var(--color-background);
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     color:var(--color-textbase)
 }
@@ -22,55 +21,50 @@ body {
     line-height: 31px;
     letter-spacing: 0.03em;
     text-decoration: none;
-    color: #2196F3;
+    color: var(--color-hoover);
 }
 .logo {
-    color: #000000;}
+    color: var(--color-logo);}
 
 .logo-invert {
-    color:#FFFFFF;
+    color:var(--color-background);
 }
 .list {
     list-style-type: none;
-
-}
-
-.link-nav {
+   }
+   
+   .link-nav {
         width: 72px;
         height: 16px;
         left: 548px;
         top: 32px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
         text-decoration:none;
-        color: #212121;
+        color: var(--color-title);;
 }
 .link-nav:hover {
     color: var(--color-hoover);
-    cursor: pointer;
+    
 }
 .top-adress:hover {
     color: var(--color-hoover);
-        cursor: pointer;
+        
 
 }
 
 .top-adress {
     width: 72px;
-        height: 16px;
-        left: 548px;
-        top: 32px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        text-decoration: none;
+    height: 16px;
+    left: 548px;
+    top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
     color:var(--color-textbase)
 }
 .hero {
@@ -86,92 +80,86 @@ body {
         height: 120px;
         left: 452px;
         top: 280px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 900;
         font-size: 44px;
         line-height: 60px;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--color-background);
 }
 .button {
     width: 216px;
-        height: 50px;           
-        background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;          
-           font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 30px;
-            letter-spacing: 0.06em;
-            color: #FFFFFF;
-            border: #2196F3;
+    height: 50px;           
+    background: var(--color-hoover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--color-background);
+    border: 0em;
+    cursor: pointer;
 }
 .features {
    
 
 }
 .features-title {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: var(--color-title);
 
 }
 .lorem {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
 }
-.what-we-do-title{font-family: 'Roboto';
-    font-style: normal;
+.what-we-do-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
-    color: #212121;}
+    color: var(--color-title);
+}
 .teams{
         
     }
 .teams-title {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: var(--color-title);
 
 }
 .name {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: var(--color-title);
 
 }
 .position {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: var(--color-textbase);
     
+}
+.footer {
+    width: 1600px;
+    height: 252px;
+    background: var(--color-section)
 }
 .map {
     font-family: 'Roboto';
@@ -180,16 +168,10 @@ body {
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color:var(--color-background);
         text-decoration: none;
 }
-.footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;
-    background: var(--color-section)
-}
+
 
 .footer-adress {
     font-family: 'Roboto';
@@ -202,3 +184,63 @@ body {
     text-decoration: none;
 
 }
+.portfolio-title {
+    visibility: hidden;
+
+}
+.button-portfolio{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-title);
+    background: var(--color-button-background);
+        border-radius: 4px;
+        border: 0em;
+        cursor: pointer;
+   }
+   .button-portfolio:hover {
+    color: var(--color-background);
+    background: var(--color-hoover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+   }
+   
+.all-button {
+    width: 73px;
+    height: 38px;
+}
+.web-button {
+width: 125px;
+    height: 38px;
+}
+.app-button {
+    width: 112px;
+    height: 38px;
+}
+.design-button {
+    width: 103px;
+    height: 38px;
+} 
+.marketing-button {
+    width: 130px;
+    height: 38px;
+}
+.project-title {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color:var(--color-title);
+}
+.project-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color:var(--color-textbase);
+}
+    
